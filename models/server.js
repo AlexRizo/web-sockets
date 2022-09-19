@@ -29,10 +29,6 @@ class Server {
         this.sockets();
     }
 
-    async conectarDB() {
-        await dbConection();
-    }
-
     middlewares() {
         // CORS
         this.app.use(cors());
